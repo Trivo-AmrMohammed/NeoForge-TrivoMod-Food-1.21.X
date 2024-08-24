@@ -1,4 +1,4 @@
-package net.trivo.trivocustomkitchenmod;
+package net.trivo.trivocustomkitchenmod.foodmix;
 
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
@@ -13,8 +13,9 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import net.trivo.trivocustomkitchenmod.item.custom.ModCreativeModeTabs;
-import net.trivo.trivocustomkitchenmod.item.custom.ModItems;
+import net.trivo.trivocustomkitchenmod.foodmix.item.custom.ModCreativeModeTabs;
+import net.trivo.trivocustomkitchenmod.foodmix.item.custom.ModItems;
+import net.trivo.trivocustomkitchenmod.foodmix.loot.LootCodecRegistry;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(TrivoCustomKitchenMod.MODID)
@@ -25,6 +26,8 @@ public class TrivoCustomKitchenMod
 
     public TrivoCustomKitchenMod(IEventBus modEventBus, ModContainer modContainer)
     {
+        LootCodecRegistry.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         NeoForge.EVENT_BUS.register(this);
@@ -48,9 +51,12 @@ public class TrivoCustomKitchenMod
     {
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.BAKEDCOCOABEANS);
+            event.accept(ModItems.FRIEDEGG);
             event.accept(ModItems.CARAMEL);
             event.accept(ModItems.CHOCOLATE);
             event.accept(ModItems.DARKCHOCOLATE);
+            event.accept(ModItems.GOLDENCHOCOLATE);
+            event.accept(ModItems.ENCHANTEDGOLDENCHOCOLATE);
             event.accept(ModItems.CHOCOLATEAPPLE);
             event.accept(ModItems.DARKCHOCOLATEAPPLE);
             event.accept(ModItems.CARAMELAPPLE);
@@ -61,12 +67,14 @@ public class TrivoCustomKitchenMod
             event.accept(ModItems.CODBURGER);
             event.accept(ModItems.SALMONBURGER);
             event.accept(ModItems.RABBITBURGER);
+            event.accept(ModItems.ROTTENFLESHBURGER);
             event.accept(ModItems.STEAKFILLEDBAKEDPOTATO);
             event.accept(ModItems.MUTTONFILLEDBAKEDPOTATO);
             event.accept(ModItems.CHICKENFILLEDBAKEDPOTATO);
             event.accept(ModItems.RABBITFILLEDBAKEDPOTATO);
             event.accept(ModItems.SALMONFILLEDBAKEDPOTATO);
             event.accept(ModItems.CODFILLEDBAKEDPOTATO);
+            event.accept(ModItems.ROTTENFLESHFILLEDBAKEDPOTATO);
         }
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.BAKEDCOCOABEANS);

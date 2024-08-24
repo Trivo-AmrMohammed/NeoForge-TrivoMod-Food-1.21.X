@@ -1,8 +1,11 @@
 {
   "item.trivokitchen.bakedcocoabeans": "Baked Cocoa Beans",
+  "item.trivokitchen.friedegg": "Fried Egg",
   "item.trivokitchen.caramel": "Caramel",
   "item.trivokitchen.chocolate": "Chocolate",
   "item.trivokitchen.darkchocolate": "Dark Chocolate",
+  "item.trivokitchen.goldenchocolate": "Golden Chocolate",
+  "item.trivokitchen.enchantedgoldenchocolate": "Enchanted Golden Chocolate",
   "item.trivokitchen.chocolateapple": "Chocolate Apple",
   "item.trivokitchen.darkchocolateapple": "Dark Chocolate Apple",
   "item.trivokitchen.caramelapple": "Caramel Apple",
@@ -13,11 +16,13 @@
   "item.trivokitchen.salmonburger": "Salmon Burger",
   "item.trivokitchen.codburger": "Cod Burger",
   "item.trivokitchen.rabbitburger": "Rabbit Burger",
+  "item.trivokitchen.rottenfleshburger": "Rotten Flesh Burger",
   "item.trivokitchen.chickenfilledbakedpotato": "Chicken Filled Baked Potato",
   "item.trivokitchen.muttonfilledbakedpotato": "Mutton Filled Baked Potato",
   "item.trivokitchen.steakfilledbakedpotato": "Steak Filled Baked Potato",
   "item.trivokitchen.rabbitfilledbakedpotato": "Rabbit Filled Baked Potato",
   "item.trivokitchen.salmonfilledbakedpotato": "Salmon Filled Baked Potato",
   "item.trivokitchen.codfilledbakedpotato": "Cod Filled Baked Potato",
+  "item.trivokitchen.rottenfleshfilledbakedpotato": "Rotten Flesh Filled Baked Potato",
   "creativetab.trivo_chef_tab": "Chef Trivo's Kitchen"
 }

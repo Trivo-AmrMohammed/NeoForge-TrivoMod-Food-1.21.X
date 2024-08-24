@@ -1,4 +1,4 @@
-package net.trivo.trivocustomkitchenmod;
+package net.trivo.trivocustomkitchenmod.foodmix;
 
 import java.util.List;
 import java.util.Set;

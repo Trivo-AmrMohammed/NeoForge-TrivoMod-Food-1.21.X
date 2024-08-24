@@ -1,4 +1,4 @@
-package net.trivo.trivocustomkitchenmod.item.custom;
+package net.trivo.trivocustomkitchenmod.foodmix.item.custom;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -6,7 +6,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.trivo.trivocustomkitchenmod.TrivoCustomKitchenMod;
+import net.trivo.trivocustomkitchenmod.foodmix.TrivoCustomKitchenMod;
 
 import java.util.function.Supplier;
 
@@ -19,9 +19,12 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.trivo_chef_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.BAKEDCOCOABEANS.get());
+                        pOutput.accept(ModItems.FRIEDEGG.get());
                         pOutput.accept(ModItems.CARAMEL.get());
                         pOutput.accept(ModItems.CHOCOLATE.get());
                         pOutput.accept(ModItems.DARKCHOCOLATE.get());
+                        pOutput.accept(ModItems.GOLDENCHOCOLATE.get());
+                        pOutput.accept(ModItems.ENCHANTEDGOLDENCHOCOLATE.get());
                         pOutput.accept(ModItems.CHOCOLATEAPPLE.get());
                         pOutput.accept(ModItems.DARKCHOCOLATEAPPLE.get());
                         pOutput.accept(ModItems.CARAMELAPPLE.get());
@@ -32,12 +35,14 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.CODBURGER.get());
                         pOutput.accept(ModItems.SALMONBURGER.get());
                         pOutput.accept(ModItems.RABBITBURGER.get());
+                        pOutput.accept(ModItems.ROTTENFLESHBURGER.get());
                         pOutput.accept(ModItems.STEAKFILLEDBAKEDPOTATO.get());
                         pOutput.accept(ModItems.CHICKENFILLEDBAKEDPOTATO.get());
                         pOutput.accept(ModItems.MUTTONFILLEDBAKEDPOTATO.get());
                         pOutput.accept(ModItems.RABBITFILLEDBAKEDPOTATO.get());
                         pOutput.accept(ModItems.SALMONFILLEDBAKEDPOTATO.get());
                         pOutput.accept(ModItems.CODFILLEDBAKEDPOTATO.get());
+                        pOutput.accept(ModItems.ROTTENFLESHFILLEDBAKEDPOTATO.get());
                     })
                     .build());
 

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "key": {
+    "#": {
+      "item": "trivokitchen:darkchocolate"
+    },
+    "X": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "trivokitchen:goldenchocolate"
+  }
+}

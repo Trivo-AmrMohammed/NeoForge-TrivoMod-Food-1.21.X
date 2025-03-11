@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "key": {
+    "#": "minecraft:bread",
+    "X": "minecraft:cooked_chicken"
+  },
+  "pattern": [
+    "#",
+    "X",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "trivokitchen:chickenburger"
+  }
+}

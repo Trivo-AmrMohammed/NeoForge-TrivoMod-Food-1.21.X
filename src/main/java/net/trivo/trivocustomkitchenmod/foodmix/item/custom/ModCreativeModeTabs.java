@@ -18,7 +18,7 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CHICKENBURGER.get()))
                     .title(Component.translatable("creativetab.trivo_chef_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.KNIFE.get());
+                        pOutput.accept(ModItems.KNIFE);
                         pOutput.accept(ModItems.TOAST.get());
                         pOutput.accept(ModItems.EGGTOAST.get());
                         pOutput.accept(ModItems.BAKEDCOCOABEANS.get());

@@ -13,7 +13,7 @@ public class EventHandler {
         Player player = event.getEntity();
 
             if (player.getY() > 270) {
-            player.setDeltaMovement(player.getDeltaMovement().x, player.getDeltaMovement().y * 0.8, player.getDeltaMovement().z);
+            player.setDeltaMovement(player.getDeltaMovement().x, player.getDeltaMovement().y * 1.2, player.getDeltaMovement().z);
         }
     }
 }

@@ -5,6 +5,7 @@ import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.storage.loot.LootContext;
@@ -32,8 +33,11 @@ public class GoldenLootModifier extends LootModifier {
     @Nonnull
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-        generatedLoot.add(new ItemStack(item));
-
+        // Check if the loot table being generated is for a dungeon chest
+        if (context.getQueriedLootTableId().equals(ResourceLocation.parse("minecraft:chests/simple_dungeon"))) {
+            // Add your custom item to the loot
+            generatedLoot.add(new ItemStack(item));
+        }
         return generatedLoot;
     }
 

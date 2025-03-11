@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "key": {
+    "#": "trivokitchen:cutbakedpotato",
+    "X": "minecraft:cooked_chicken"
+  },
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "trivokitchen:chickenfilledbakedpotato"
+  }
+}

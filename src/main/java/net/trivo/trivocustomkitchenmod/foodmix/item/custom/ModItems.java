@@ -17,13 +17,14 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.List;
 
-public class ModItems {
+public class ModItems{
+
     public static final DeferredRegister.Items ITEMS =
             DeferredRegister.createItems("trivokitchen");
 
-
     public static final DeferredItem<Item> KNIFE = ITEMS.registerItem("knife",
-            KNIFE -> new SwordItem(ToolMaterial.IRON, 3, -2.4f, KNIFE));
+            KNIFE -> new KnifeItem(ToolMaterial.IRON, -1, 3, KNIFE,
+                    () -> ModItems.KNIFE.get()));
 
     public static final DeferredItem<Item> TOAST = ITEMS.registerItem("toast",
             TOAST -> new Item(TOAST.food(ModFoods.TOAST)), new Item.Properties());
@@ -100,6 +101,7 @@ public class ModItems {
         return Consumable.builder().consumeSeconds(1.6F).animation(ItemUseAnimation.EAT).sound(SoundEvents.GENERIC_EAT).hasConsumeParticles(true);
     }
 
-    public static void register(IEventBus eventBus) {
+        public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus); }
+
 }

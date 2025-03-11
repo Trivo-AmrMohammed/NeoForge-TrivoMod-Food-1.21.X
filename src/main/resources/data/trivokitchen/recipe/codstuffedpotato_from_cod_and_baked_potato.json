@@ -3,7 +3,7 @@
   "category": "food",
   "key": {
     "#": {
-      "item": "minecraft:baked_potato"
+      "item": "trivokitchen:cutbakedpotato"
     },
     "X": {
       "item": "minecraft:cooked_cod"

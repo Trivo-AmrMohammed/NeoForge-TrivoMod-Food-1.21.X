@@ -1,5 +1,8 @@
 {
+  "item.trivokitchen.knife": "Knife",
   "item.trivokitchen.bakedcocoabeans": "Baked Cocoa Beans",
+  "item.trivokitchen.toast": "Toast",
+  "item.trivokitchen.eggtoast": "Egg Toast",
   "item.trivokitchen.friedegg": "Fried Egg",
   "item.trivokitchen.caramel": "Caramel",
   "item.trivokitchen.chocolate": "Chocolate",
@@ -17,6 +20,7 @@
   "item.trivokitchen.codburger": "Cod Burger",
   "item.trivokitchen.rabbitburger": "Rabbit Burger",
   "item.trivokitchen.rottenfleshburger": "Rotten Flesh Burger",
+  "item.trivokitchen.cutbakedpotato": "Cut Baked Potato",
   "item.trivokitchen.chickenfilledbakedpotato": "Chicken Filled Baked Potato",
   "item.trivokitchen.muttonfilledbakedpotato": "Mutton Filled Baked Potato",
   "item.trivokitchen.steakfilledbakedpotato": "Steak Filled Baked Potato",

@@ -1,4 +1,11 @@
   {
-    "conditions": [],
-    "type": "trivokitchen:golden_loot"
+    "type": "trivokitchen:add_item",
+    "conditions": [
+      {
+        "condition": "neoforge:loot_table_id",
+        "loot_table_id": "minecraft:chests/simple_dungeon"
+      }
+    ],
+    "item": "trivokitchen:goldenchocolate",
+    "weight": 10
   }

@@ -15,7 +15,35 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.trivo.trivocustomkitchenmod.foodmix.item.custom.ModCreativeModeTabs;
 import net.trivo.trivocustomkitchenmod.foodmix.item.custom.ModItems;
-import net.trivo.trivocustomkitchenmod.foodmix.loot.LootCodecRegistry;
+import net.trivo.trivocustomkitchenmod.foodmix.init.LootCodecRegistry;
+
+ /*"trivokitchen:abandoned_mineshaft",
+    "trivokitchen:ancient_city",
+    "trivokitchen:ancient_city_ice_box",
+    "trivokitchen:bastion_bridge",
+    "trivokitchen:bsation_hoglin_stable",
+    "trivokitchen:bastion_other",
+    "trivokitchen:bastion_treasure",
+    "trivokitchen:buried_treasure",
+    "trivokitchen:desert_pyramid",
+    "trivokitchen:end_city_treasure",
+    "trivokitchen:igloo_chest",
+    "trivokitchen:jungle_temple",
+    "trivokitchen:jungle_temple_dispenser",
+    "trivokitchen:nether_bridge",
+    "trivokitchen:pillager_outpost",
+    "trivokitchen:ruined_portal",
+    "trivokitchen:shipwreck_map",
+    "trivokitchen:shipwreck_supply",
+    "trivokitchen:shipwreck_treasure",
+    "trivokitchen:simple_dungeon",
+    "trivokitchen:spawn_bonus_chest",
+    "trivokitchen:stronghold_corridor",
+    "trivokitchen:stronghold_crossing",
+    "trivokitchen:stronghold_library",
+    "trivokitchen:underwater_ruin_big",
+    "trivokitchen:underwater_ruin_small",
+    "trivokitchen:woodland_mansion"*/
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(TrivoCustomKitchenMod.MODID)
@@ -26,7 +54,7 @@ public class TrivoCustomKitchenMod
 
     public TrivoCustomKitchenMod(IEventBus modEventBus, ModContainer modContainer)
     {
-        LootCodecRegistry.register(modEventBus);
+        LootCodecRegistry.GLOBAL_LOOT_MODIFIER_SERIALIZERS.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

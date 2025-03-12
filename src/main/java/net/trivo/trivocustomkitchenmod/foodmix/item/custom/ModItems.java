@@ -23,8 +23,8 @@ public class ModItems{
             DeferredRegister.createItems("trivokitchen");
 
     public static final DeferredItem<Item> KNIFE = ITEMS.registerItem("knife",
-            KNIFE -> new KnifeItem(ToolMaterial.IRON, -1, 3, KNIFE,
-                    () -> ModItems.KNIFE.get()));
+            KNIFE -> new KnifeItem(ToolMaterial.IRON, 1, -2, KNIFE,
+                    ModItems.KNIFE));
 
     public static final DeferredItem<Item> TOAST = ITEMS.registerItem("toast",
             TOAST -> new Item(TOAST.food(ModFoods.TOAST)), new Item.Properties());

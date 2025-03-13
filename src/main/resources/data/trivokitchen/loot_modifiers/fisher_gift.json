@@ -3,10 +3,10 @@
     "conditions": [
       {
         "condition": "neoforge:loot_table_id",
-        "loot_table_id": "minecraft:chests/village/village_butcher"
+        "loot_table_id": "minecraft:gameplay/hero_of_the_village/fisherman_gift"
       },
       {
-        "chance": 0.3,
+        "chance": 0.5,
         "condition": "minecraft:random_chance"
       }
     ],

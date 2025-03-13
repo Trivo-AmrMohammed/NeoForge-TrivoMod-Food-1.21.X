@@ -19,11 +19,13 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.trivo_chef_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.KNIFE);
+                        pOutput.accept(ModItems.CRUMBS.get());
+                        pOutput.accept(ModItems.BUN.get());
                         pOutput.accept(ModItems.TOAST.get());
                         pOutput.accept(ModItems.EGGTOAST.get());
-                        pOutput.accept(ModItems.BAKEDCOCOABEANS.get());
                         pOutput.accept(ModItems.FRIEDEGG.get());
                         pOutput.accept(ModItems.CARAMEL.get());
+                        pOutput.accept(ModItems.BAKEDCOCOABEANS.get());
                         pOutput.accept(ModItems.CHOCOLATE.get());
                         pOutput.accept(ModItems.DARKCHOCOLATE.get());
                         pOutput.accept(ModItems.GOLDENCHOCOLATE.get());

@@ -26,6 +26,10 @@ public class ModItems{
             KNIFE -> new KnifeItem(ToolMaterial.IRON, 1, -2, KNIFE,
                     ModItems.KNIFE));
 
+    public static final DeferredItem<Item> CRUMBS = ITEMS.registerItem("crumbs",
+            CRUMBS -> new Item(CRUMBS.food(ModFoods.CRUMBS)), new Item.Properties());
+    public static final DeferredItem<Item> BUN = ITEMS.registerItem("bun",
+            BUN -> new Item(BUN.food(ModFoods.BUN)), new Item.Properties());
     public static final DeferredItem<Item> TOAST = ITEMS.registerItem("toast",
             TOAST -> new Item(TOAST.food(ModFoods.TOAST)), new Item.Properties());
     public static final DeferredItem<Item> EGGTOAST = ITEMS.registerItem("eggtoast",

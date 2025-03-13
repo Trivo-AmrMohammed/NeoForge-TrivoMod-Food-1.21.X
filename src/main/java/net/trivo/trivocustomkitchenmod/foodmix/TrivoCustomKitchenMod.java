@@ -50,6 +50,8 @@ public class TrivoCustomKitchenMod
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.CRUMBS);
+            event.accept(ModItems.BUN);
             event.accept(ModItems.TOAST);
             event.accept(ModItems.EGGTOAST);
             event.accept(ModItems.BAKEDCOCOABEANS);
@@ -80,6 +82,7 @@ public class TrivoCustomKitchenMod
             event.accept(ModItems.ROTTENFLESHFILLEDBAKEDPOTATO);
         }
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.BUN);
             event.accept(ModItems.TOAST);
             event.accept(ModItems.BAKEDCOCOABEANS);
             event.accept(ModItems.CARAMEL);

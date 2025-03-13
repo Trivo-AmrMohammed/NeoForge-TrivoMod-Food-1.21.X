@@ -7,6 +7,10 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.component.Consumable;
 
 public class ModFoods {
+    public static final FoodProperties CRUMBS = new FoodProperties.Builder().nutrition(2)
+            .saturationModifier(0.1f).build();
+    public static final FoodProperties BUN = new FoodProperties.Builder().nutrition(2)
+            .saturationModifier(0.1f).build();
     public static final FoodProperties TOAST = new FoodProperties.Builder().nutrition(2)
             .saturationModifier(0.1f).build();
     public static final FoodProperties EGGTOAST = new FoodProperties.Builder().nutrition(2)

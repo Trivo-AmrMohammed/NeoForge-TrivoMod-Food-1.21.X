@@ -1,6 +1,28 @@
 {
   "replace": false,
   "entries":[
-    "trivokitchen:golden_loot"
+    "trivokitchen:abandoned_mineshaft",
+    "trivokitchen:abandoned_mineshaft_2",
+    "trivokitchen:ancient_city",
+    "trivokitchen:bastion_hoglin_stable",
+    "trivokitchen:bastion_other",
+    "trivokitchen:bastion_treasure",
+    "trivokitchen:butcher_gift",
+    "trivokitchen:desert_pyramid",
+    "trivokitchen:desert_pyramid_2",
+    "trivokitchen:reward_ominous_rare",
+    "trivokitchen:reward_ominous_unique",
+    "trivokitchen:reward_unique",
+    "trivokitchen:ruined_portal",
+    "trivokitchen:ruined_portal_2",
+    "trivokitchen:simple_dungeon",
+    "trivokitchen:simple_dungeon_2",
+    "trivokitchen:stronghold_corridor",
+    "trivokitchen:treasure",
+    "trivokitchen:underwater_ruin_big",
+    "trivokitchen:village_butcher",
+    "trivokitchen:woodland_mansion",
+    "trivokitchen:woodland_mansion_2"
+
   ]
 }

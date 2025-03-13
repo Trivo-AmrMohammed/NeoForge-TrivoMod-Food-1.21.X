@@ -4,8 +4,11 @@
       {
         "condition": "neoforge:loot_table_id",
         "loot_table_id": "minecraft:chests/simple_dungeon"
+      },
+      {
+        "chance": 0.16,
+        "condition": "minecraft:random_chance"
       }
     ],
-    "item": "trivokitchen:goldenchocolate",
-    "weight": 10
+    "item": "trivokitchen:enchantedgoldenchocolate"
   }

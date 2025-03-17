@@ -1,10 +1,12 @@
 {
-  "item.trivokitchen.knife": "Knife - Fix Egg Toast Texture, Add More Toasts, Add Knife Upgrades, Darken Burger Bun Textures To Be Like Bread",
+  "item.trivokitchen.knife": "Knife - Fix Food Nutrition, Add Knife Upgrades, Darken Burger Bun Textures To Be Like Bread",
   "item.trivokitchen.bakedcocoabeans": "Baked Cocoa Beans",
   "item.trivokitchen.crumbs": "Crumbs",
   "item.trivokitchen.bun": "Bun",
   "item.trivokitchen.toast": "Toast",
   "item.trivokitchen.eggtoast": "Egg Toast",
+  "item.trivokitchen.chocolatetoast": "Chocolate Toast",
+  "item.trivokitchen.darkchocolatetoast": "Dark Chocolate Toast",
   "item.trivokitchen.friedegg": "Fried Egg",
   "item.trivokitchen.caramel": "Caramel",
   "item.trivokitchen.chocolate": "Chocolate",

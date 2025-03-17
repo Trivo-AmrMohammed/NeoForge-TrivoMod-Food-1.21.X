@@ -54,6 +54,8 @@ public class TrivoCustomKitchenMod
             event.accept(ModItems.BUN);
             event.accept(ModItems.TOAST);
             event.accept(ModItems.EGGTOAST);
+            event.accept(ModItems.CHOCOLATETOAST);
+            event.accept(ModItems.DARKCHOCOLATETOAST);
             event.accept(ModItems.BAKEDCOCOABEANS);
             event.accept(ModItems.FRIEDEGG);
             event.accept(ModItems.CARAMEL);

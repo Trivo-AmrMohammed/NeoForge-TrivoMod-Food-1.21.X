@@ -32,8 +32,14 @@ public class ModItems{
             BUN -> new Item(BUN.food(ModFoods.BUN)), new Item.Properties());
     public static final DeferredItem<Item> TOAST = ITEMS.registerItem("toast",
             TOAST -> new Item(TOAST.food(ModFoods.TOAST)), new Item.Properties());
+
     public static final DeferredItem<Item> EGGTOAST = ITEMS.registerItem("eggtoast",
             EGGTOAST -> new Item(EGGTOAST.food(ModFoods.EGGTOAST)));
+    public static final DeferredItem<Item> CHOCOLATETOAST = ITEMS.registerItem("chocolatetoast",
+            CHOCOLATETOAST -> new Item(CHOCOLATETOAST.food(ModFoods.CHOCOLATETOAST)));
+    public static final DeferredItem<Item> DARKCHOCOLATETOAST = ITEMS.registerItem("darkchocolatetoast",
+            DARKCHOCOLATETOAST -> new Item(DARKCHOCOLATETOAST.food(ModFoods.DARKCHOCOLATETOAST)));
+
     public static final DeferredItem<Item> BAKEDCOCOABEANS = ITEMS.registerItem("bakedcocoabeans",
             BAKEDCOCOABEANS -> new Item(BAKEDCOCOABEANS.food(ModFoods.BAKEDCOCOABEANS)));
     public static final DeferredItem<Item> FRIEDEGG = ITEMS.registerItem("friedegg",

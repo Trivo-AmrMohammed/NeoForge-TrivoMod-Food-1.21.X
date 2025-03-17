@@ -13,8 +13,14 @@ public class ModFoods {
             .saturationModifier(0.1f).build();
     public static final FoodProperties TOAST = new FoodProperties.Builder().nutrition(2)
             .saturationModifier(0.1f).build();
+
     public static final FoodProperties EGGTOAST = new FoodProperties.Builder().nutrition(2)
             .saturationModifier(0.1f).build();
+    public static final FoodProperties CHOCOLATETOAST = new FoodProperties.Builder().nutrition(2)
+            .saturationModifier(0.1f).build();
+    public static final FoodProperties DARKCHOCOLATETOAST = new FoodProperties.Builder().nutrition(2)
+            .saturationModifier(0.1f).build();
+
     public static final FoodProperties BAKEDCOCOABEANS = new FoodProperties.Builder().nutrition(2)
             .saturationModifier(0.1f).build();
     public static final FoodProperties FRIEDEGG = new FoodProperties.Builder().nutrition(4)

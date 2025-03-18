@@ -43,7 +43,7 @@ public class ModItems{
     public static final DeferredItem<Item> BAKEDCOCOABEANS = ITEMS.registerItem("bakedcocoabeans",
             BAKEDCOCOABEANS -> new Item(BAKEDCOCOABEANS.food(ModFoods.BAKEDCOCOABEANS, defaultFood().consumeSeconds(0.8f).build())));
     public static final DeferredItem<Item> FRIEDEGG = ITEMS.registerItem("friedegg",
-            FRIEDEGG -> new Item(FRIEDEGG.food(ModFoods.FRIEDEGG)));
+            FRIEDEGG -> new Item(FRIEDEGG.food(ModFoods.FRIEDEGG, defaultFood().consumeSeconds(0.8f).build())));
     public static final DeferredItem<Item> CARAMEL = ITEMS.registerItem("caramel",
             CARAMEL -> new Item(CARAMEL.food(ModFoods.CARAMEL, defaultFood().consumeSeconds(2f).build())));
     public static final DeferredItem<Item> CHOCOLATE = ITEMS.registerItem("chocolate",
@@ -68,43 +68,43 @@ public class ModItems{
     public static final DeferredItem<Item> DARKCHOCOLATEAPPLE = ITEMS.registerItem("darkchocolateapple",
             DARKCHOCOLATEAPPLE -> new Item(DARKCHOCOLATEAPPLE.food(ModFoods.DARKCHOCOLATEAPPLE)));
     public static final DeferredItem<Item> CARAMELAPPLE = ITEMS.registerItem("caramelapple",
-            CARAMELAPPLE -> new Item(CARAMELAPPLE.food(ModFoods.CARAMELAPPLE)));
+            CARAMELAPPLE -> new Item(CARAMELAPPLE.food(ModFoods.CARAMELAPPLE, defaultFood().consumeSeconds(2.4f).build())));
     public static final DeferredItem<Item> APPLEPIE = ITEMS.registerItem("applepie",
             APPLEPIE -> new Item(APPLEPIE.food(ModFoods.APPLEPIE)));
 
 
     public static final DeferredItem<Item> BEEFBURGER = ITEMS.registerItem("beefburger",
-            BEEFBURGER -> new Item(BEEFBURGER.food(ModFoods.BEEFBURGER)));
+            BEEFBURGER -> new Item(BEEFBURGER.food(ModFoods.BEEFBURGER, defaultFood().consumeSeconds(2.4f).build())));
     public static final DeferredItem<Item> CHICKENBURGER = ITEMS.registerItem("chickenburger",
-            CHICKENBURGER -> new Item(CHICKENBURGER.food(ModFoods.CHICKENBURGER)));
+            CHICKENBURGER -> new Item(CHICKENBURGER.food(ModFoods.CHICKENBURGER, defaultFood().consumeSeconds(2.4f).build())));
     public static final DeferredItem<Item> MUTTONBURGER = ITEMS.registerItem("muttonburger",
-            MUTTONBURGER -> new Item(MUTTONBURGER.food(ModFoods.MUTTONBURGER)));
+            MUTTONBURGER -> new Item(MUTTONBURGER.food(ModFoods.MUTTONBURGER, defaultFood().consumeSeconds(2.4f).build())));
     public static final DeferredItem<Item> CODBURGER = ITEMS.registerItem("codburger",
-            CODBURGER -> new Item(CODBURGER.food(ModFoods.CODBURGER)));
+            CODBURGER -> new Item(CODBURGER.food(ModFoods.CODBURGER, defaultFood().consumeSeconds(2.4f).build())));
     public static final DeferredItem<Item> SALMONBURGER = ITEMS.registerItem("salmonburger",
-            SALMONBURGER -> new Item(SALMONBURGER.food(ModFoods.SALMONBURGER)));
+            SALMONBURGER -> new Item(SALMONBURGER.food(ModFoods.SALMONBURGER, defaultFood().consumeSeconds(2.4f).build())));
     public static final DeferredItem<Item> RABBITBURGER = ITEMS.registerItem("rabbitburger",
-            RABBITBURGER -> new Item(RABBITBURGER.food(ModFoods.RABBITBURGER)));
+            RABBITBURGER -> new Item(RABBITBURGER.food(ModFoods.RABBITBURGER, defaultFood().consumeSeconds(2.4f).build())));
     public static final DeferredItem<Item> ROTTENFLESHBURGER = ITEMS.registerItem("rottenfleshburger",
-            ROTTENFLESHBURGER -> new Item(ROTTENFLESHBURGER.food(ModFoods.ROTTENFLESHBURGER, defaultFood().onConsume(new ApplyStatusEffectsConsumeEffect
+            ROTTENFLESHBURGER -> new Item(ROTTENFLESHBURGER.food(ModFoods.ROTTENFLESHBURGER, defaultFood().consumeSeconds(2.4f).onConsume(new ApplyStatusEffectsConsumeEffect
                     (new MobEffectInstance(MobEffects.HUNGER, 600, 0), 0.8F)).build())));
 
     public static final DeferredItem<Item> CUTBAKEDPOTATO = ITEMS.registerItem("cutbakedpotato",
             CUTBAKEDPOTATO -> new Item(CUTBAKEDPOTATO.food(ModFoods.CUTBAKEDPOTATO)));
     public static final DeferredItem<Item> STEAKFILLEDBAKEDPOTATO = ITEMS.registerItem("steakfilledbakedpotato",
-            STEAKFILLEDBAKEDPOTATO -> new Item(STEAKFILLEDBAKEDPOTATO.food(ModFoods.STEAKFILLEDBAKEDPOTATO)));
+            STEAKFILLEDBAKEDPOTATO -> new Item(STEAKFILLEDBAKEDPOTATO.food(ModFoods.STEAKFILLEDBAKEDPOTATO, defaultFood().consumeSeconds(2.4f).build())));
     public static final DeferredItem<Item> CHICKENFILLEDBAKEDPOTATO = ITEMS.registerItem("chickenfilledbakedpotato",
-            CHICKENFILLEDBAKEDPOTATO -> new Item(CHICKENFILLEDBAKEDPOTATO.food(ModFoods.CHICKENFILLEDBAKEDPOTATO)));
+            CHICKENFILLEDBAKEDPOTATO -> new Item(CHICKENFILLEDBAKEDPOTATO.food(ModFoods.CHICKENFILLEDBAKEDPOTATO, defaultFood().consumeSeconds(2.4f).build())));
     public static final DeferredItem<Item> MUTTONFILLEDBAKEDPOTATO = ITEMS.registerItem("muttonfilledbakedpotato",
-            MUTTONFILLEDBAKEDPOTATO -> new Item(MUTTONFILLEDBAKEDPOTATO.food(ModFoods.MUTTONFILLEDBAKEDPOTATO)));
+            MUTTONFILLEDBAKEDPOTATO -> new Item(MUTTONFILLEDBAKEDPOTATO.food(ModFoods.MUTTONFILLEDBAKEDPOTATO, defaultFood().consumeSeconds(2.4f).build())));
     public static final DeferredItem<Item> RABBITFILLEDBAKEDPOTATO = ITEMS.registerItem("rabbitfilledbakedpotato",
-            RABBITFILLEDBAKEDPOTATO -> new Item(RABBITFILLEDBAKEDPOTATO.food(ModFoods.RABBITFILLEDBAKEDPOTATO)));
+            RABBITFILLEDBAKEDPOTATO -> new Item(RABBITFILLEDBAKEDPOTATO.food(ModFoods.RABBITFILLEDBAKEDPOTATO, defaultFood().consumeSeconds(2.4f).build())));
     public static final DeferredItem<Item> SALMONFILLEDBAKEDPOTATO = ITEMS.registerItem("salmonfilledbakedpotato",
-            SALMONFILLEDBAKEDPOTATO -> new Item(SALMONFILLEDBAKEDPOTATO.food(ModFoods.SALMONFILLEDBAKEDPOTATO)));
+            SALMONFILLEDBAKEDPOTATO -> new Item(SALMONFILLEDBAKEDPOTATO.food(ModFoods.SALMONFILLEDBAKEDPOTATO, defaultFood().consumeSeconds(2.4f).build())));
     public static final DeferredItem<Item> CODFILLEDBAKEDPOTATO = ITEMS.registerItem("codfilledbakedpotato",
-            CODFILLEDBAKEDPOTATO -> new Item(CODFILLEDBAKEDPOTATO.food(ModFoods.CODFILLEDBAKEDPOTATO)));
+            CODFILLEDBAKEDPOTATO -> new Item(CODFILLEDBAKEDPOTATO.food(ModFoods.CODFILLEDBAKEDPOTATO, defaultFood().consumeSeconds(2.4f).build())));
     public static final DeferredItem<Item> ROTTENFLESHFILLEDBAKEDPOTATO = ITEMS.registerItem("rottenfleshfilledbakedpotato",
-            ROTTENFLESHFILLEDBAKEDPOTATO -> new Item(ROTTENFLESHFILLEDBAKEDPOTATO.food(ModFoods.ROTTENFLESHFILLEDBAKEDPOTATO, defaultFood().onConsume(new ApplyStatusEffectsConsumeEffect
+            ROTTENFLESHFILLEDBAKEDPOTATO -> new Item(ROTTENFLESHFILLEDBAKEDPOTATO.food(ModFoods.ROTTENFLESHFILLEDBAKEDPOTATO, defaultFood().consumeSeconds(2.4f).onConsume(new ApplyStatusEffectsConsumeEffect
                     (new MobEffectInstance(MobEffects.HUNGER, 600, 0), 0.8F)).build())));
 
     public static Consumable.Builder defaultFood() {

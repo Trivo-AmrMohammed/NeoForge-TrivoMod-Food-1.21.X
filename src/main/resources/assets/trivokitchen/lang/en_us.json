@@ -1,5 +1,5 @@
 {
-  "item.trivokitchen.knife": "Knife - Fix Food Nutrition, Add Knife Upgrades & Throwable",
+  "item.trivokitchen.knife": "Knife - Add Knife Upgrades & Throwable, Add reason to craft other foods like chocolate maybe effects or something?",
   "item.trivokitchen.bakedcocoabeans": "Baked Cocoa Beans",
   "item.trivokitchen.crumbs": "Crumbs",
   "item.trivokitchen.bun": "Bun",
@@ -32,5 +32,5 @@
   "item.trivokitchen.salmonfilledbakedpotato": "Salmon Filled Baked Potato",
   "item.trivokitchen.codfilledbakedpotato": "Cod Filled Baked Potato",
   "item.trivokitchen.rottenfleshfilledbakedpotato": "Rotten Flesh Filled Baked Potato",
-  "creativetab.trivo_chef_tab": "Chef Trivo's Kitchen"
+  "creativetab.trivo_chef_tab": "Trivo's Recipes"
 }

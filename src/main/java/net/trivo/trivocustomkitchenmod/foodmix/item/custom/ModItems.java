@@ -27,11 +27,11 @@ public class ModItems{
                     ModItems.KNIFE));
 
     public static final DeferredItem<Item> CRUMBS = ITEMS.registerItem("crumbs",
-            CRUMBS -> new Item(CRUMBS.food(ModFoods.CRUMBS)), new Item.Properties());
-    public static final DeferredItem<Item> BUN = ITEMS.registerItem("bun",
-            BUN -> new Item(BUN.food(ModFoods.BUN)), new Item.Properties());
+            CRUMBS -> new Item(CRUMBS.food(ModFoods.CRUMBS, defaultFood().consumeSeconds(0.4f).build())), new Item.Properties());
     public static final DeferredItem<Item> TOAST = ITEMS.registerItem("toast",
-            TOAST -> new Item(TOAST.food(ModFoods.TOAST)), new Item.Properties());
+            TOAST -> new Item(TOAST.food(ModFoods.TOAST, defaultFood().consumeSeconds(0.8f).build())), new Item.Properties());
+    public static final DeferredItem<Item> BUN = ITEMS.registerItem("bun",
+            BUN -> new Item(BUN.food(ModFoods.BUN, defaultFood().consumeSeconds(1.2f).build())), new Item.Properties());
 
     public static final DeferredItem<Item> EGGTOAST = ITEMS.registerItem("eggtoast",
             EGGTOAST -> new Item(EGGTOAST.food(ModFoods.EGGTOAST)));
@@ -41,11 +41,11 @@ public class ModItems{
             DARKCHOCOLATETOAST -> new Item(DARKCHOCOLATETOAST.food(ModFoods.DARKCHOCOLATETOAST)));
 
     public static final DeferredItem<Item> BAKEDCOCOABEANS = ITEMS.registerItem("bakedcocoabeans",
-            BAKEDCOCOABEANS -> new Item(BAKEDCOCOABEANS.food(ModFoods.BAKEDCOCOABEANS)));
+            BAKEDCOCOABEANS -> new Item(BAKEDCOCOABEANS.food(ModFoods.BAKEDCOCOABEANS, defaultFood().consumeSeconds(0.8f).build())));
     public static final DeferredItem<Item> FRIEDEGG = ITEMS.registerItem("friedegg",
             FRIEDEGG -> new Item(FRIEDEGG.food(ModFoods.FRIEDEGG)));
     public static final DeferredItem<Item> CARAMEL = ITEMS.registerItem("caramel",
-            CARAMEL -> new Item(CARAMEL.food(ModFoods.CARAMEL)));
+            CARAMEL -> new Item(CARAMEL.food(ModFoods.CARAMEL, defaultFood().consumeSeconds(2f).build())));
     public static final DeferredItem<Item> CHOCOLATE = ITEMS.registerItem("chocolate",
             CHOCOLATE -> new Item(CHOCOLATE.food(ModFoods.CHOCOLATE)));
     public static final DeferredItem<Item> DARKCHOCOLATE = ITEMS.registerItem("darkchocolate",

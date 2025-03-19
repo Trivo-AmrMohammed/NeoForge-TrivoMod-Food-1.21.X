@@ -1,9 +1,12 @@
 package net.trivo.trivocustomkitchenmod.foodmix.item.custom;
 
+import com.jcraft.jorbis.Block;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
@@ -45,7 +48,7 @@ public class ModItems{
     public static final DeferredItem<Item> FRIEDEGG = ITEMS.registerItem("friedegg",
             FRIEDEGG -> new Item(FRIEDEGG.food(ModFoods.FRIEDEGG, defaultFood().consumeSeconds(0.8f).build())));
     public static final DeferredItem<Item> CARAMEL = ITEMS.registerItem("caramel",
-            CARAMEL -> new Item(CARAMEL.food(ModFoods.CARAMEL, defaultFood().consumeSeconds(2f).build())));
+            CARAMEL -> new Item(CARAMEL.food(ModFoods.CARAMEL, defaultFood().consumeSeconds(2f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 60, 1))).build())));
     public static final DeferredItem<Item> CHOCOLATE = ITEMS.registerItem("chocolate",
             CHOCOLATE -> new Item(CHOCOLATE.food(ModFoods.CHOCOLATE)));
     public static final DeferredItem<Item> DARKCHOCOLATE = ITEMS.registerItem("darkchocolate",
@@ -68,7 +71,7 @@ public class ModItems{
     public static final DeferredItem<Item> DARKCHOCOLATEAPPLE = ITEMS.registerItem("darkchocolateapple",
             DARKCHOCOLATEAPPLE -> new Item(DARKCHOCOLATEAPPLE.food(ModFoods.DARKCHOCOLATEAPPLE)));
     public static final DeferredItem<Item> CARAMELAPPLE = ITEMS.registerItem("caramelapple",
-            CARAMELAPPLE -> new Item(CARAMELAPPLE.food(ModFoods.CARAMELAPPLE, defaultFood().consumeSeconds(2.4f).build())));
+            CARAMELAPPLE -> new Item(CARAMELAPPLE.food(ModFoods.CARAMELAPPLE, defaultFood().consumeSeconds(2.4f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 60, 1))).build())));
     public static final DeferredItem<Item> APPLEPIE = ITEMS.registerItem("applepie",
             APPLEPIE -> new Item(APPLEPIE.food(ModFoods.APPLEPIE)));
 

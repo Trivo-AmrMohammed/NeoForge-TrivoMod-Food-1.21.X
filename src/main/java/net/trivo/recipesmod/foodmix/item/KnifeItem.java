@@ -1,5 +1,8 @@
 package net.trivo.recipesmod.foodmix.item;
 import net.minecraft.client.Minecraft;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BlockTags;
@@ -7,6 +10,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.state.BlockState;
+import net.neoforged.neoforge.server.ServerLifecycleHooks;
 
 import java.util.function.Supplier;
 
@@ -29,12 +33,6 @@ public class KnifeItem extends Item {
         ItemStack remainder = itemStack.copy();
             remainder.setDamageValue(remainder.getDamageValue() + 1);
             if (remainder.getDamageValue() >= remainder.getMaxDamage()) {
-                Minecraft minecraft = Minecraft.getInstance();
-                if (minecraft.player != null && minecraft.level != null) {
-                    minecraft.level.playSound(minecraft.player,
-                            minecraft.player.getX(), minecraft.player.getY(), minecraft.player.getZ(),
-                            SoundEvents.ITEM_BREAK, SoundSource.PLAYERS, 1.0F, 1.0F);
-                }
                 return ItemStack.EMPTY;
             }
         return remainder;

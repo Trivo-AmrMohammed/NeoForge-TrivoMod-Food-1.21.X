@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "key": {
+    "#": "trivorecipes:bun",
+    "X": "minecraft:cooked_rabbit"
+  },
+  "pattern": [
+    "#",
+    "X",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "trivorecipes:rabbit_burger"
+  }
+}

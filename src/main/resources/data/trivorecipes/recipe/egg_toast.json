@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "key": {
+    "#": "trivorecipes:fried_egg",
+    "X": "trivorecipes:toast"
+  },
+  "pattern": [
+    "#",
+    "X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "trivorecipes:egg_toast"
+  }
+}

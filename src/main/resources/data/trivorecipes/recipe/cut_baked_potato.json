@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    "minecraft:baked_potato",
+    "trivorecipes:knife"
+  ],
+  "result": {
+    "count": 1,
+    "id": "trivorecipes:cut_baked_potato"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "key": {
+    "#": "trivorecipes:cut_baked_potato",
+    "X": "minecraft:cooked_mutton"
+  },
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "trivorecipes:mutton_filled_baked_potato"
+  }
+}

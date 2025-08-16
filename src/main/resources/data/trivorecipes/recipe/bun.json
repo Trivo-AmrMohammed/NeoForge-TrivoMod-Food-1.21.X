@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+      "minecraft:bread",
+    "trivorecipes:knife"
+  ],
+  "result": {
+    "count": 2,
+    "id": "trivorecipes:bun"
+  }
+}

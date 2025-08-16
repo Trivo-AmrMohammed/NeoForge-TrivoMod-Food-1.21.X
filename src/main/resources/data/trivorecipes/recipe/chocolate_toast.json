@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "key": {
+    "#": "trivorecipes:chocolate",
+    "X": "trivorecipes:toast"
+  },
+  "pattern": [
+    "#",
+    "X"
+  ],
+  "result": {
+    "count": 1,
+    "id": "trivorecipes:chocolate_toast"
+  }
+}

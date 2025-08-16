@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures":{
+    "layer0": "trivorecipes:item/cod_filled_baked_potato"
+  }
+}

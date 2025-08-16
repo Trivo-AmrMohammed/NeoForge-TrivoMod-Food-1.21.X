@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    "minecraft:sugar",
+    "trivorecipes:baked_cocoa_beans"
+  ],
+  "result": {
+    "count": 2,
+    "id": "trivorecipes:dark_chocolate"
+  }
+}

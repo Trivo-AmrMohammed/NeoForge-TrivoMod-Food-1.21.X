@@ -1,0 +1,14 @@
+  {
+    "type": "trivorecipes:add_item",
+    "conditions": [
+      {
+        "condition": "neoforge:loot_table_id",
+        "loot_table_id": "minecraft:chests/stronghold_corridor"
+      },
+      {
+        "chance": 0.125,
+        "condition": "minecraft:random_chance"
+      }
+    ],
+    "item": "trivorecipes:golden_chocolate"
+  }

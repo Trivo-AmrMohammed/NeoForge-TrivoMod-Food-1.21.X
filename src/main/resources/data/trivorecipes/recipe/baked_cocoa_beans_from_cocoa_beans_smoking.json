@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 150,
+  "experience": 0.1,
+  "ingredient": "minecraft:cocoa_beans",
+  "result": {
+    "id": "trivorecipes:baked_cocoa_beans"
+  }
+}
